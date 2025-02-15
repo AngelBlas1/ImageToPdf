@@ -16,3 +16,6 @@ A function is created in Image_service that is responsible for analyzing the dat
 
 ## #5
 Now it is necessary to create the interfaces that save the user data and allow obtaining the file that will be uploaded to Firebase.
+
+## #6
+We added the code provided by firebase and modified it to make it more secure in the use of credentials
