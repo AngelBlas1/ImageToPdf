@@ -1,6 +1,9 @@
 from reportlab.pdfgen import canvas
 from pathlib import Path
 
+# Utilicé esta librería debido a que me guíe de un video para poder transformar la imagen en pdf
+# además de que utilice una carpeta de nombre utils porque investigué que esa carpeta es para archivos que no pertenecen a las otras
+
 def convert_image_to_pdf(image_path: str, pdf_path: str):
     """Convierte una imagen en un archivo PDF."""
     pdf_folder = Path(pdf_path).parent
