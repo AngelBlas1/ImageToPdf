@@ -13,3 +13,6 @@ In image_controller.py we create a router that will have the API requests, in th
 
 ## #4
 A function is created in Image_service that is responsible for analyzing the data obtained in the request and tries to convert the images to pdf using another function from another file.
+
+## #5
+Now it is necessary to create the interfaces that save the user data and allow obtaining the file that will be uploaded to Firebase.
