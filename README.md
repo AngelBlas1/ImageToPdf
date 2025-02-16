@@ -25,3 +25,6 @@ Created the FirebaseRepository class in order to use the interface made previous
 
 ## #8 
 Modified the image_service file so that it can use the StorageInterface functions in the FirestoreRepository class. At this point you are able to convert an image to a pdf file.
+
+## Extra commit
+I realized that in the previous commit where I could already upload and convert the image to pdf in Firebase, in image_service the init function depended specifically on the FirestoreRepository, so why not the repository parameter would be managed from image_controler, in this way large changes would be avoided and allowing the use of other storages.
