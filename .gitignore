@@ -1,2 +1,5 @@
 config.py
 img-to-ps-firebase-adminsdk-fbsvc-d6c1181849.json
+__pycache__
+pdfs
+uploads
