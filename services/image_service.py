@@ -1,7 +1,6 @@
 from pathlib import Path
 from utils.pdf_converter import convert_image_to_pdf
 from interfaces.storage_interface import StorageInterface
-from repositories.firebase_repository import FirebaseRepository
 
 UPLOAD_FOLDER = "uploads"
 PDF_FOLDER = "pdfs"
@@ -9,7 +8,7 @@ Path(UPLOAD_FOLDER).mkdir(exist_ok=True)
 Path(PDF_FOLDER).mkdir(exist_ok=True)
 
 class ImageService:
-    def __init__(self, storage_repo: StorageInterface = FirebaseRepository()):
+    def __init__(self, storage_repo: StorageInterface):
         self.storage_repo = storage_repo 
 
     def process_image(self, file, name, email):
