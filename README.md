@@ -19,3 +19,6 @@ Now it is necessary to create the interfaces that save the user data and allow o
 
 ## #6
 We added the code provided by firebase and modified it to make it more secure in the use of credentials
+
+## #7 
+Created the FirebaseRepository class in order to use the interface made previously, and use the functions to upload it to the firebase database and obtain the firestore link
