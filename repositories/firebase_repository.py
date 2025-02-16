@@ -12,3 +12,17 @@ firebase_admin.initialize_app(cred, {
 
 db = firestore.client()
 storage_bucket = storage.bucket()
+
+class FirebaseRepository(StorageInterface):
+    def upload_file(self, file_path: str, file_name: str) -> str:
+        
+        pdfFirestore = storage_bucket.blob(f"pdfs/{file_name}.pdf")
+        pdfFirestore.upload_from_filename(file_path)
+        
+        return pdfFirestore.public_url
+
+    def save_user_data(self, name: str, email: str, pdf_url: str):
+        
+        user_data = {"name": name, "email": email, "pdf_url": pdf_url}
+        
+        db.collection("users").add(user_data)
