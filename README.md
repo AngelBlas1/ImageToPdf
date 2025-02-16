@@ -22,3 +22,6 @@ We added the code provided by firebase and modified it to make it more secure in
 
 ## #7 
 Created the FirebaseRepository class in order to use the interface made previously, and use the functions to upload it to the firebase database and obtain the firestore link
+
+## #8 
+Modified the image_service file so that it can use the StorageInterface functions in the FirestoreRepository class. At this point you are able to convert an image to a pdf file.
